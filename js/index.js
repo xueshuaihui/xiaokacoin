@@ -74,8 +74,6 @@ $(".submit").click(function(){
 
 
 $(function(){
-    /*视频*/
-    //$(".example-video-dimensions").attr({width:"300px!important"})
     /*轮播*/
     var bannerbox=$(".bannerbox");
     var height=bannerbox.find("img").css("height");
@@ -115,5 +113,19 @@ $(function(){
                 t=setInterval(move,8000);
             });
         })
+    })
+    /*视频*/
+    var start=$(".vjs-big-play-button");
+    $(".video_box").on("click",function(){
+        var btn=$(".video-js");
+        setTimeout(function(){
+            if(btn.hasClass("vjs-paused")){
+                start.css({display:"block"}).on("click",function(){
+                    $(this).css({display:"none"});
+                });
+            }else if(btn.hasClass("vjs-playing")){
+                start.css({display:"none"});
+            }
+        },0)
     })
 })
