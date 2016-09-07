@@ -32,7 +32,6 @@ h1 { font-size: 2.4rem;/*2.4 × 10px = 24px*/ }
 .marks>li{width: 8px;height: 8px;border-radius: 50%;border: 1px solid #000000;float: left;margin: 0 5px;}
 .marks>li:hover{cursor: pointer;}
 /*视频*/
-/*视频*/
 .videobg{background: url("../images/videobg.jpg") no-repeat;background-size: cover;}
 .video_box{padding: 10px;background: #ffffff;margin: auto;border-radius: 20px;overflow: hidden;}
 .video-js{background-color: #bae7f4!important;border-radius: 15px;overflow: hidden;}
