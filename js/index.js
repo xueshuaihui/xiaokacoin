@@ -116,8 +116,8 @@ $(function(){
     })
     /*视频*/
     var start=$(".vjs-big-play-button");
+    var btn=$(".video-js");
     $(".video_box").on("click",function(){
-        var btn=$(".video-js");
         setTimeout(function(){
             if(btn.hasClass("vjs-paused")){
                 start.css({display:"block"}).on("click",function(){
@@ -128,4 +128,13 @@ $(function(){
             }
         },0)
     })
+    setInterval(function(){
+        if(btn.hasClass("vjs-paused")){
+            start.css({display:"block"}).on("click",function(){
+                $(this).css({display:"none"});
+            });
+        }else if(btn.hasClass("vjs-playing")){
+            start.css({display:"none"});
+        }
+    },1000)
 })
