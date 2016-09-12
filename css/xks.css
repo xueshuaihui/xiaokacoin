@@ -1,4 +1,4 @@
-body{background: url("/images/hua.png") no-repeat right;background-color: #a5e3f5;}
+body{background: url("../images/hua.png") no-repeat right;background-color: #a5e3f5;}
 .g-doc{width: 100%;height: auto;margin: auto;padding-bottom: 1%;}
 /**/
 .bannerbox{width: 100%;max-width: 1500px;margin: auto;text-align: center;margin-top: 4%;}
@@ -6,7 +6,7 @@ body{background: url("/images/hua.png") no-repeat right;background-color: #a5e3f
 .content_box{width: 90%;max-width: 1350px;margin: auto;position: relative;padding-top: 5%;}
 .con_title{width: 25%;position: absolute;top: 0;left: -3%;}
 .con_title>img{width: 100%;}
-.content{width: 100%;height: auto;background: url("/images/bg.png") no-repeat center;background-size: 100% 100%;}
+.content{width: 100%;height: auto;background: url("../images/bg.png") no-repeat center;background-size: 100% 100%;}
 .portrait_box{width: 90%;height: 440px;margin: auto;}
 .pro,.photo{height: 100%;float: left;}
 .pro{width: 30%;position: relative;}
