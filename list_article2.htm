@@ -24,13 +24,13 @@
     {dede:arclist  addfields='ceo,job,avatar,banner' channelid='17' row='11' runphp='yes'}
     <div class="content_box">
         <div class="con_title">
-            {dede:global.itemindex runphp='yes'}
+            [field:global.autoindex runphp=yes]
             if(@me == 1){
             @me = 'one';
             }else{
             @me = 'two';
             }
-            {/dede:global.itemindex}
+            [/field:global.autoindex]
         </div>
         <!--标题-->
         <div class="content">
