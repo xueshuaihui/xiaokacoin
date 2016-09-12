@@ -10,8 +10,9 @@
     <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js"></script>
     <script src="{dede:global.cfg_templets_skin/}/js/index.js"></script>
     <style>
-        .content{padding-top: 30px;}
-        .content>h6{font-size: 4rem;color: #31c0d0;font-family: "微软雅黑";text-align: center;}
+        .content{border: 20px solid transparent;height: auto;border-image: url("./images/bg.png") 20 40 round;background-size: 100% 100%;}
+        .content h6{font-size: 4rem;color: #31c0d0;font-family: "微软雅黑";text-align: center;}
+        .con{padding-top: 30px;background-color: #f3f8fa;}
     </style>
 </head>
 <body>
@@ -34,19 +35,21 @@
         </div>
         <!--标题-->
         <div class="content">
-            <h6>[field:title/]</h6>
-            <div class="portrait_box">
-                <div class="pho_bor">
-                    <div class="pro">
-                        <div class="probox">
-                            <img src="[field:avatar/]" alt="[field:ceo/]">
-                            <h6>[field:ceo/]</h6>
-                            <p>[field:job/]</p>
-                            <div class="more"><a href="[field:arcurl/]"><img src="" alt=""><span>阅读更多</span></a></div>
+            <div class="con">
+                <h6>[field:title/]</h6>
+                <div class="portrait_box">
+                    <div class="pho_bor">
+                        <div class="pro">
+                            <div class="probox">
+                                <img src="[field:avatar/]" alt="[field:ceo/]">
+                                <h6>[field:ceo/]</h6>
+                                <p>[field:job/]</p>
+                                <div class="more"><a href="[field:arcurl/]"><img src="" alt=""><span>阅读更多</span></a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="photo">
-                        <img src="[field:banner/]" alt="">
+                        <div class="photo">
+                            <img src="[field:banner/]" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
