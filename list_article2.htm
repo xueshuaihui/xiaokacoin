@@ -66,18 +66,19 @@
                 <h6>[field:title/]</h6>
                 <div class="portrait_box">
                     {dede:arclist  addfields='ceo,job,avatar,banner' channelid='17' row='11' runphp='yes'}
-                    <div class="pho_bor">
-                        <div class="pro">
-                            <div class="probox">
                     [field:global.autoindex runphp=yes]
                     if(@me != 1){
                     @me = '
+                    <div class="pho_bor">
+                        <div class="pro">
+                            <div class="probox">
+
                                 <img src="[field:avatar/]" alt="[field:ceo/]">
                                 <h6>[field:ceo/]</h6>
                                 <p>[field:job/]</p>
                                 <div class="more"><a href="[field:arcurl/]"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjExOThCNUJGNkU3NDExRTZBODE2RkEyMjgzREQ0MDBEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjExOThCNUMwNkU3NDExRTZBODE2RkEyMjgzREQ0MDBEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTE5OEI1QkQ2RTc0MTFFNkE4MTZGQTIyODNERDQwMEQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTE5OEI1QkU2RTc0MTFFNkE4MTZGQTIyODNERDQwMEQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4LBAfAAAABiElEQVR42qyWsUoDQRRFJ2FJnVJFLMTO1mBsbLQUjH+h6YKNgo0SRATb+AGWFkHxHwzZIo21YNCAldbBwjMwu+zOzuy+XX1wmuSSmzfvztutHY4/bpRSi3ACU+Uur+a2taTKVB2O4R4eoA9Nh06iERvqGkILZvAMXQgsrUQjNtT1AwPYglUYQcfSZzRH4axTxrDGDH3frcAVLJgjnRRpmOfkL4ZRteEa3n2hocuUhs+mkiP1lT7abROaJ1doMBhBrOEP9KFZ1TAZmg348oUG05QG0y4EVQ11zc2djEIT8oMHlukcvBrJDPNqDS7hE8YY3dkCzFKauvqfWocXiSaoaKADcQY7cGFmZ3fm1JTtsAE9E5pXvXlsM4wa4NWU6VAP/hweTSC+HV2lNBhlNBLDttkmeofuuZ4o5uLHmryLn2eYXFs932rDLNZIVlvgCcQp7JqtMizSuEIjWW2B2R562G+w6TDLaMqYJQ31sENYNoEYmEeRHZoijZIcafT6sC94xcjTiOpXgAEAic6d9Mwuf7kAAAAASUVORK5CYII=" alt=""><span>阅读更多</span></a>
                                 </div>';
-                    }
+
 
                             </div>
                         </div>
@@ -85,6 +86,7 @@
                             <img src="[field:banner/]" alt="">
                         </div>
                     </div>
+                    }
                     {/dede:arclist}
                 </div>
             </div>
