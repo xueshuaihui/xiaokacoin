@@ -15,7 +15,7 @@ var width=$("body").width();
 })(document, window);
 
 $(window).resize(function(){
-    window.location.reload();
+    $.getScript($('script[src*="/index.js"]').attr('src'));
 })
 $(".greet_box").css({"max-height":width});
 var width=$(".name").width();
