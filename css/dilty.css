@@ -8,7 +8,7 @@ body{background: url("../images/daily.jpg") repeat-y center;background-size: 100
 .g-banner{width: 100%;height: auto;}
 .g-banner>img{width: 100%;}
 .history_lis{width: 100%;margin-top: 30px;padding-bottom: 20px;}
-.history_lis>ul>li{width: 100%;height: 30px;line-height: 30px;}
+.history_lis>ul>li{width: 100%;height: 30px;line-height: 30px;overflow: hidden;}
 .history_lis>ul>li>a{font-family: "RTWSYueGoDemo";font-size: 2.5rem;color: #979481;display: block;}
 .lis_time{float: right;}
 .lis_title{float: left;}
