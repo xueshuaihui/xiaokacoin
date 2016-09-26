@@ -20,44 +20,21 @@
 <div class="g-body">
     <div class="g-conten">
         <div class="g-con">
-            <div class="g-nav">
-                <ul>
-                    <a href="">
-                        <li>徐小咖</li>
-                    </a>
-                    <a href="">
-                        <li>小咖币</li>
-                    </a>
-                    <a href="">
-                        <li>小咖说</li>
-                    </a>
-                    <a href="">
-                        <li>小咖日报</li>
-                    </a>
-                </ul>
-            </div>
+            {dede:include filename="head2.htm"/}
             <!--banner-->
             <div class="g-banner">
-                <img src="/images/daily_banner.jpg" alt="">
+                <img src="{dede:global.cfg_templets_skin/}/images/daily_banner.jpg" alt="">
             </div>
             <!---->
             <div class="history_lis">
                 <ul>
+                    {dede:list pagesize="10" flag="h"}
                     <li>
-                        <a href="">
-                            <p><span class="lis_title">小咖日报</span><span class="lis_time">2015.06.26</span></p>
+                        <a href="[field:arcurl/]">
+                            <p><span class="lis_title">[field:title/]</span><span class="lis_time">[field:pubdate function="GetDateMK(@me)"/]</span></p>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <p><span class="lis_title">小咖日报</span><span class="lis_time">2015.06.26</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <p><span class="lis_title">小咖日报</span><span class="lis_time">2015.06.26</span></p>
-                        </a>
-                    </li>
+                    {/dede:list}
                 </ul>
             </div>
         </div>
@@ -65,6 +42,6 @@
     </div>
 </div>
 </body>
-<script src="/js/jquery-1.9.1.min.js"></script>
-<script src="/js/index.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/index.js"></script>
 </html>
