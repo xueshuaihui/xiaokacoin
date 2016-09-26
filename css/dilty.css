@@ -1,4 +1,4 @@
-body{background: url("../images/daily.jpg") no-repeat center;background-size: 100%;}
+body{background: url("../images/daily.jpg") repeat-y center;background-size: 100%;}
 .g-body{width: 100%;height: auto;border: 1px solid transparent;}
 .g-conten{width: 85%;height: auto;margin: 8% auto;border-radius: 20px;background-color: #dcd3ce;}
 .g-con{width: 95%;margin: auto;}
